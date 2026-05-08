@@ -19,9 +19,9 @@ Aplicación de gestión de tareas construida con HTML, CSS y JavaScript vanilla.
 
 | Integrante | Rol | Rama |
 |---|---|---|
-| [Nombre 1] | Lógica y localStorage | `feature/core-tasks` |
-| [Nombre 2] | Estilos y modo oscuro | `feature/ui-styles` |
-| [Nombre 3] | Filtros y buscador | `feature/filters-search` |
+| Diego Jimy | LocalStorage y HTML | `feature/core-tasks` |
+| Anderson Huarac | Estilos y modo oscuro en CSS | `feature/ui-styles` |
+| Guillermo De La Cruz | Filtros y lógica en JS | `feature/filters-search` |
 
 ---
 

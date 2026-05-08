@@ -482,3 +482,36 @@ header {
     background: var(--high-bg);
     color: var(--high);
 }
+
+/* EMPTY STATE */
+.empty-state {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: var(--text3);
+}
+
+.empty-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.empty-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text2);
+    margin-bottom: 6px;
+}
+
+.empty-sub {
+    font-size: 0.85rem;
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 0.78rem;
+    color: var(--text3);
+    font-family: 'Space Mono', monospace;
+}

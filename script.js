@@ -5,7 +5,7 @@ const STORAGE_KEY = 'taskflow';
   let searchQuery = '';
   let isDark = false;
  
-  // ─ PERSISTENCIA ─
+// ─ PERSISTENCIA ─
   function save() {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(tasks));
   }

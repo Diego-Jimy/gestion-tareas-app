@@ -1,21 +1,107 @@
-# TaskFlow · Gestión de Tareas
+# Gestión de Tareas Web
 
-Aplicación de gestión de tareas construida con HTML, CSS y JavaScript vanilla. Proyecto colaborativo con Git Flow, desplegado en GitHub Pages.
-
----
-
-## Funcionalidades
-
-- Crear tareas con prioridad (Alta, Media, Baja)
-- Marcar como completada / eliminar
-- Filtros por estado y buscador en tiempo real
-- Dashboard con estadísticas de progreso
-- Modo oscuro/claro con persistencia en `localStorage`
-- Diseño responsive (móvil y desktop)
+Aplicación web de gestión de tareas desarrollada de forma colaborativa utilizando HTML, CSS, JavaScript, Git y GitHub.
 
 ---
 
-## Equipo y ramas
+# Descripción del Proyecto
+
+La aplicación permite organizar tareas de manera dinámica mediante:
+
+- Creación de tareas.
+- Gestión de estados.
+- Sistema de prioridades.
+- Filtros de tareas.
+- Dashboard de estadísticas.
+- Buscador en tiempo real.
+- Persistencia de datos con LocalStorage.
+- Tema claro y oscuro.
+
+El objetivo principal del proyecto es aplicar desarrollo colaborativo utilizando Git Flow y GitHub.
+
+---
+
+# Rama de trabajo
+
+```bash
+feature/logica-html
+```
+
+---
+
+# Integrante responsable
+
+## Diego Jimy
+
+Responsable de la estructura HTML inicial del proyecto.
+
+---
+
+# Trabajo realizado
+
+Se desarrolló la estructura base de la aplicación web utilizando HTML5 semántico.
+
+## Funcionalidades estructuradas en el HTML
+
+- Encabezado principal de la aplicación.
+- Formulario para crear tareas.
+- Campo de texto para ingresar tareas.
+- Selector de prioridad:
+  - Alta
+  - Media
+  - Baja
+- Botón para agregar tareas.
+- Buscador de tareas en tiempo real.
+- Sistema de filtros:
+  - Todas
+  - Pendientes
+  - Completadas
+- Dashboard de estadísticas:
+  - Total de tareas
+  - Porcentaje de progreso
+  - Tareas urgentes
+- Contenedor dinámico para la lista de tareas.
+- Botón para alternar entre tema claro y oscuro.
+- Footer informativo.
+- Estructura preparada para integración con JavaScript y LocalStorage.
+
+---
+
+# Tecnologías utilizadas
+
+- HTML5
+- CSS3
+- JavaScript
+- Git
+- GitHub
+
+---
+
+# Flujo de trabajo colaborativo
+
+- Desarrollo realizado en rama independiente.
+- Uso de Git Flow.
+- Prohibido trabajar directamente sobre `main`.
+- Cada funcionalidad se desarrolla en ramas separadas.
+- Integración mediante Pull Request.
+- Revisión de código entre integrantes.
+
+---
+
+# Estructura del proyecto
+
+```text
+gestion-tareas-web/
+│
+├── index.html
+├── style.css
+├── script.js
+└── README.md
+```
+
+---
+
+# Estado actual
 
 | Integrante | Rol | Rama |
 |---|---|---|
@@ -25,6 +111,6 @@ Aplicación de gestión de tareas construida con HTML, CSS y JavaScript vanilla.
 
 ---
 
-## Tecnologías
+# Próximas funcionalidades
 
 HTML5 · CSS3 · JavaScript ES6+ · localStorage · GitHub Pages

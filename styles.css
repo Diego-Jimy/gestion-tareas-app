@@ -1,0 +1,54 @@
+:root {
+    --bg: #F5F3EE;
+    --surface: #FFFFFF;
+    --surface2: #EDEAE3;
+    --border: #D4CFBF;
+    --text: #1A1814;
+    --text2: #6B6760;
+    --text3: #A09C94;
+    --accent: #E85D2F;
+    --accent-soft: #FCEAE3;
+    --high: #D93B1B;
+    --high-bg: #FCEAE3;
+    --med: #C07A00;
+    --med-bg: #FFF3D4;
+    --low: #2A7A4B;
+    --low-bg: #E3F4EB;
+    --done-text: #A09C94;
+    --shadow: 0 2px 12px rgba(0,0,0,0.06);
+    --radius: 10px;
+}
+
+[data-theme="dark"] {
+    --bg: #141210;
+    --surface: #1E1C19;
+    --surface2: #272420;
+    --border: #3A3630;
+    --text: #F0EDE6;
+    --text2: #A09C94;
+    --text3: #6B6760;
+    --accent: #FF7A4D;
+    --accent-soft: #2C1A12;
+    --high: #FF6B4D;
+    --high-bg: #2C1510;
+    --med: #F0A832;
+    --med-bg: #2C2210;
+    --low: #4DC47A;
+    --low-bg: #0F2A1A;
+    --done-text: #6B6760;
+    --shadow: 0 2px 12px rgba(0,0,0,0.3);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Syne', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    transition: background 0.3s, color 0.3s;
+}

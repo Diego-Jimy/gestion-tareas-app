@@ -30,6 +30,17 @@
  
   function priorityLabel(p) {
     return p === 'alta' ? 'Alta' : p === 'media' ? 'Media' : 'Baja';
+  function addTask() {
+    const name = document.getElementById('taskInput').value.trim();
+    if (!name) { document.getElementById('taskInput').focus(); return; }
+    const priority = document.getElementById('prioritySelect').value;
+    tasks.unshift(createTask(name, priority));
+    document.getElementById('taskInput').value = '';
+    save();
+    render();
+// ─ PERSISTENCIA ─
+  function save() {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(tasks));
   }
  
   function priorityClass(p) {

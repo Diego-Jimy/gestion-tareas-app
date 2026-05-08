@@ -1,11 +1,182 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gestión de Tareas - TaskFlow</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <div class="app-shell">
+
+        <!-- Encabezado principal -->
+        <header>
+            <div class="logo">
+                <div class="logo-mark">T</div>
+                <div class="logo-text">Task<span>Flow</span></div>
+            </div>
+
+            <div class="header-actions">
+                <button 
+                    class="btn-icon" 
+                    id="themeToggle" 
+                    title="Cambiar tema" 
+                    aria-label="Alternar tema oscuro o claro"
+                >
+                    Tema
+                </button>
+            </div>
+        </header>
+
+        <main>
+
+            <!-- Estadísticas -->
+            <section class="stats-grid" aria-label="Estadísticas de tareas">
+
+                <div class="stat-card">
+                    <div class="stat-label">Total</div>
+                    <div class="stat-value" id="statTotal">0</div>
+                    <div class="stat-sub">Tareas creadas</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-label">Progreso</div>
+                    <div class="stat-value accent" id="statProgress">0%</div>
+
+                    <div class="progress-bar-track">
+                        <div 
+                            class="progress-bar-fill" 
+                            id="progressBar" 
+                            style="width: 0%">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-label">Urgentes</div>
+                    <div class="stat-value" id="statUrgent">0</div>
+                    <div class="stat-sub">Prioridad alta</div>
+                </div>
+
+            </section>
+
+            <!-- Formulario -->
+            <section class="add-form">
+
+                <form id="taskForm">
+
+                    <div class="form-row">
+
+                        <input 
+                            class="task-input" 
+                            id="taskInput" 
+                            type="text" 
+                            placeholder="Nueva tarea..." 
+                            maxlength="120" 
+                            autocomplete="off" 
+                            required
+                        >
+
+                        <select 
+                            class="priority-select" 
+                            id="prioritySelect" 
+                            required
+                        >
+                            <option value="alta">Alta</option>
+                            <option value="media" selected>Media</option>
+                            <option value="baja">Baja</option>
+                        </select>
+
+                        <button 
+                            class="btn-add" 
+                            id="addBtn" 
+                            type="submit"
+                        >
+                            Agregar
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+            <!-- Controles -->
+            <section class="controls">
+
+                <div 
+                    class="filter-tabs" 
+                    role="tablist" 
+                    aria-label="Filtrar tareas"
+                >
+
+                    <button 
+                        class="filter-tab active" 
+                        data-filter="todas" 
+                        role="tab" 
+                        aria-selected="true"
+                    >
+                        Todas
+                    </button>
+
+                    <button 
+                        class="filter-tab" 
+                        data-filter="pendientes" 
+                        role="tab" 
+                        aria-selected="false"
+                    >
+                        Pendientes
+                    </button>
+
+                    <button 
+                        class="filter-tab" 
+                        data-filter="completadas" 
+                        role="tab" 
+                        aria-selected="false"
+                    >
+                        Completadas
+                    </button>
+
+                </div>
+
+                <div class="search-wrapper">
+
+                    <input 
+                        class="search-input" 
+                        id="searchInput" 
+                        type="text" 
+                        placeholder="Buscar tarea..." 
+                        aria-label="Buscar tarea"
+                    >
+
+                </div>
+
+            </section>
+
+            <!-- Lista de tareas -->
+            <section class="task-section">
+
+                <div 
+                    class="task-list" 
+                    id="taskList" 
+                    role="list" 
+                    aria-label="Lista de tareas"
+                >
+                    <!-- Las tareas se agregarán aquí con JavaScript -->
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            TaskFlow - Datos guardados en localStorage
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
 </body>
 </html>

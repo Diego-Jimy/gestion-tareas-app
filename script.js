@@ -17,6 +17,9 @@
     document.getElementById('taskInput').value = '';
     save();
     render();
+// ─ PERSISTENCIA ─
+  function save() {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(tasks));
   }
  
   function toggleTask(id) {

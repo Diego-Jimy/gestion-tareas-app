@@ -103,19 +103,14 @@ gestion-tareas-web/
 
 # Estado actual
 
- Estructura HTML inicial completada.  
- Proyecto preparado para integración con CSS y JavaScript.  
- Base preparada para funcionalidades dinámicas.
+| Integrante | Rol | Rama |
+|---|---|---|
+| Diego Jimy | LocalStorage en HTML | `feature/core-tasks` |
+| Anderson Huarac | Estilos y modo oscuro en CSS | `feature/ui-styles` |
+| Guillermo De La Cruz | Filtros y lógica en JS | `feature/filters-search` |
 
 ---
 
 # Próximas funcionalidades
 
-- Persistencia con LocalStorage.
-- Creación dinámica de tareas.
-- Eliminación de tareas.
-- Sistema de filtros funcional.
-- Dashboard dinámico.
-- Buscador en tiempo real.
-- Tema oscuro.
-- Publicación en GitHub Pages.
+HTML5 · CSS3 · JavaScript ES6+ · localStorage · GitHub Pages

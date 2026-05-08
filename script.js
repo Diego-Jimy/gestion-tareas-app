@@ -49,18 +49,18 @@ save();
 render();
 }
 
- // ─ ESTADOS ─
-  function updateStats() {
-    const total = tasks.length;
-    const done = tasks.filter(t => t.done).length;
-    const urgent = tasks.filter(t => t.priority === 'alta' && !t.done).length;
-    const pct = total === 0 ? 0 : Math.round((done / total) * 100);
- 
-    document.getElementById('statTotal').textContent = total;
-    document.getElementById('statProgress').textContent = pct + '%';
-    document.getElementById('progressBar').style.width = pct + '%';
-    document.getElementById('statUrgent').textContent = urgent;
-  }
+// ─ ESTADOS ─
+function updateStats() {
+  const total = tasks.length;
+  const done = tasks.filter(t => t.done).length;
+  const urgent = tasks.filter(t => t.priority === 'alta' && !t.done).length;
+  const pct = total === 0 ? 0 : Math.round((done / total) * 100);
+
+  document.getElementById('statTotal').textContent = total;
+  document.getElementById('statProgress').textContent = pct + '%';
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('statUrgent').textContent = urgent;
+}
  
 // ─ RENDER ─
 function getFiltered() {
